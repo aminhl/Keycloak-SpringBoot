@@ -8,3 +8,10 @@ spring:
 
 server:
   port: 8081
+
+jwt:
+  auth:
+    converter:
+      resource-access: resource_access
+      resource-id: spring-keycloak-client
+      principal-attribute: preferred_username
